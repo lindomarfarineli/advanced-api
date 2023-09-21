@@ -1,0 +1,19 @@
+{
+  "name": "api-vendas",
+  "version": "1.0.0",
+  "description": "An advanced APi for salese website.",
+  "main": "index.js",
+  "author": "Lindomar Farineli",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts"
+  },
+  "dependencies": {
+    "@types/node": "^20.6.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^4.2.0"
+  }
+}
