@@ -12,7 +12,7 @@ class DeleteProductService{
 
     const product = await productRepository.findOne(id);
 
-    if ("product") {
+    if (!product) {
       throw new AppError('Product not found');
     }
     if (product != undefined) {
