@@ -17,20 +17,21 @@
 - Na pasta modules, ficaram as pastas que abrangem a área de conhecimento da aplicação, a princípio customers, products, orders e users
 
 - Na pasta shared ficaram módulos de utilização geral, compartilhados por toda a aplicação.
-
-
+  
+  
 
 Regras:
 
 A princípio, a aplicação atenderá as seguintes regras;
 
-- A senha deve ser armazenada por criptografia
+- A senha deve ser armazenada por criptografia com demonstrado
+  <img title="Senha Criptografada" src="imagens/passwordHashed.png" alt="Demonstração da senha criptografada" style="zoom:80%;">
 
 - Não pode haver mais de um produto com o mesmo nome
 
 - Não pode haver um mesmo email sendo utilizado por mais de um usuário
-
-
+  
+  
 
 Serão aplicados conhecimentos em  Desing Pattern, testes automatizados e Docker.
 
