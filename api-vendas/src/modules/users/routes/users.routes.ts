@@ -6,15 +6,15 @@ import UserAvatarController from '../controllers/UserAvatarController';
 import multer from 'multer';
 import uploadConfig from '@config/upload';
 
- const usersRouter = Router();
+ const usersRouters = Router();
  const usersConstroller = new UsersController();
  const usersAvatarController = new UserAvatarController();
 
  const upload = multer(uploadConfig);
 
- usersRouter.get('/', isAuthenticated, usersConstroller.index);
+ usersRouters.get('/', isAuthenticated, usersConstroller.index);
 
- usersRouter.post(
+ usersRouters.post(
   '/',
   celebrate({
     [Segments.BODY]: {
@@ -26,11 +26,11 @@ import uploadConfig from '@config/upload';
   usersConstroller.create,
   );
 
-  usersRouter.patch(
+  usersRouters.patch(
     '/avatar',
     isAuthenticated,
     upload.single('avatar'),
     usersAvatarController.update
   );
 
-  export default usersRouter;
+  export default usersRouters;
