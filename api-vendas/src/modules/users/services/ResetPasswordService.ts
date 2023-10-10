@@ -36,7 +36,7 @@ class ResetService{
 
     user.password = await hash(password, 17);
 
+    await usersRepository.save(user);
   }
 }
-
 export default ResetService;
